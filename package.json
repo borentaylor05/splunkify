@@ -29,5 +29,9 @@
   },
   "dependencies": {
     "chalk": "^2.4.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/borentaylor05/splunkify"
   }
 }

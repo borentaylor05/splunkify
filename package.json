@@ -1,0 +1,33 @@
+{
+  "name": "splunkify",
+  "version": "1.0.0",
+  "description": "Simple node module",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rm -rf node_modules",
+    "test:coverage": "node_modules/.bin/istanbul cover node_modules/.bin/_mocha lib/tests/**/*.test.js",
+    "start": "npm run server",
+    "test:linter": "eslint *.js ./**/*.js",
+    "test:unit": "mocha lib/tests/**/*.test.js",
+    "test:integration": "mocha tests/integration/**/*.test.js",
+    "test": "npm run test:linter && npm run test:coverage && npm run test:integration"
+  },
+  "keywords": [
+    "node",
+    "eslint",
+    "mocha"
+  ],
+  "author": "Taylor Boren",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-eslint": "^8.2.2",
+    "chai": "^4.1.2",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^16.1.0",
+    "istanbul": "^0.4.5",
+    "mocha": "^5.1.0"
+  },
+  "dependencies": {
+    "chalk": "^2.4.0"
+  }
+}
